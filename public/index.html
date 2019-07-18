@@ -17,27 +17,26 @@
 </head>
 
 <body>
-  <div class="navbar-fixed">
-    <nav class="black" role="navigation">
-      <div class="nav-wrapper container">
-        <a id="logo-container" href="/" class="brand-logo">InCanto</a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="#section1">Home</a></li>
-          <li><a href="#section2">Contato</a></li>
-          <li><a href="#section3">Sobre</a></li>
-          <li><a href="galeria.html">Galeria</a></li>
-        </ul>
+  <nav class="black" role="navigation">
+    <div class="nav-wrapper container">
+      <a href="/" class="brand-logo">InCanto</a>
+      <a href="/" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#section1">Home</a></li>
+        <li><a href="#section2">Contato</a></li>
+        <li><a href="#section3">Sobre</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+      </ul>
+    </div>
+  </nav>
 
-        <ul id="nav-mobile" class="sidenav">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Contato</a></li>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Galeria</a></li>
-        </ul>
-        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      </div>
-    </nav>
-  </div>
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="#section1">Home</a></li>
+    <li><a href="#section2">Contato</a></li>
+    <li><a href="#section3">Sobre</a></li>
+    <li><a href="galeria.html">Galeria</a></li>
+  </ul>
+
 
   <div id="section1">
     <div id="index-banner" class="parallax-container">
@@ -108,7 +107,7 @@
       <div class="section no-pad-bot">
         <div class="container">
           <div class="row center">
-            <h5 class="header col s12 light">Texto texto</h5>
+            <h5 class="header col s12 light"></h5>
           </div>
         </div>
       </div>
@@ -122,10 +121,11 @@
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
           <h4>Contato</h4>
-          <p class="left-align light"><p>Endereço: Rua Marquês de Caravelas, 84 - Barra, Salvador - BA, 40140-241 - Próximo ao HiperIdeal.</p>
-          <p>Horário de funcionamento: Seg à Sex 9h às 18h e Sab: 9h às 16h</p>
+          <p class="left-align light">
+            <p>Endereço: Rua Marquês de Caravelas, 84 - Barra, Salvador - BA, 40140-241 - Próximo ao HiperIdeal.</p>
+            <p>Horário de funcionamento: Seg à Sex 9h às 18h e Sab: 9h às 16h</p>
             <p>Telefone: (71) 3019-7722</p>
-            </p>
+          </p>
         </div>
       </div>
 
