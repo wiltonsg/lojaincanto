@@ -6,6 +6,12 @@
  * Made By MaterializeCSS.com
  */
 
+/*Fontes*/
+@font-face{
+  font-family: Antipasto;
+  color: white;
+  src: url("/fontes/Antipasto.ttf");
+}
 
  body {
   background-color: black;
@@ -21,7 +27,7 @@ p {
 }
 
 .sidenav-trigger {
-  color: #26a69a;
+  color: #000000;
 }
 
 .parallax-container {
