@@ -7,10 +7,30 @@
  */
 
 /*Fontes*/
-@font-face{
-  font-family: Antipasto;
-  color: white;
-  src: url("/fontes/Antipasto.ttf");
+@font-face {
+  font-family: 'Antipasto';
+  src: url('fontes/antipasto/Antipasto.eot');
+  src: url('fontes/antipasto/Antipasto.eot') format('embedded-opentype'),
+       url('fontes/antipasto/Antipasto.woff2') format('woff2'),
+       url('fontes/antipasto/Antipasto.woff') format('woff'),
+       url('fontes/antipasto/Antipasto.ttf') format('truetype'),
+       url('fontes/antipasto/Antipasto.svg#Antipasto') format('svg');
+
+  font-family: 'AGENCYR';
+  src: url('fontes/AGENCYR/AGENCYR.eot');
+  src: url('fontes/AGENCYR/AGENCYR.eot') format('embedded-opentype'),
+       url('fontes/AGENCYR/AGENCYR.woff2') format('woff2'),
+       url('fontes/AGENCYR/AGENCYR.woff') format('woff'),
+       url('fontes/AGENCYR/AGENCYR.ttf') format('truetype'),
+       url('fontes/AGENCYR/AGENCYR.svg#AGENCYR') format('svg');
+
+  font-family: 'AGENCYB';
+  src: url('fontes/AGENCYB/AGENCYB.eot');
+  src: url('fontes/AGENCYB/AGENCYB.eot') format('embedded-opentype'),
+       url('fontes/AGENCYB/AGENCYB.woff2') format('woff2'),
+       url('fontes/AGENCYB/AGENCYB.woff') format('woff'),
+       url('fontes/AGENCYB/AGENCYB.ttf') format('truetype'),
+       url('fontes/AGENCYB/AGENCYB.svg#AGENCYB') format('svg');
 }
 
  body {
@@ -66,3 +86,10 @@ p {
 footer.page-footer {
   margin: 0;
 }
+
+/*Alinhamento dos icones*/
+.instagramico { 
+  float: left; 
+  margin: 4px; 
+  background: url(images/icones/instagram.svg) center;
+  }
