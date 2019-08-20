@@ -87,13 +87,6 @@ footer.page-footer {
   margin: 0;
 }
 
-/*Alinhamento dos icones*/
-.instagramico { 
-  float: left; 
-  margin: 4px; 
-  background: url(images/icones/instagram.svg) center;
-  }
-
   /*Go-to-top*/
   #myBtn {
     display: none; /* Hidden by default */
