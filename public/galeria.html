@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>INCANTO - Loja Colaborativa</title>
+  <meta name="description"
+    content="A InCanto chega a Salvador com a intenção de fomentar a economia criativa e dar espaço aos artesãos e microempresários." />
+  <meta name="keywords" content="incanto, economia criativa, salvador, loja colaborativa" />
+  <link rel="shortcut icon" href="/images/favicon.ico" />
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link rel="stylesheet" href="css/blueimp-gallery.min.css" />
+</head>
+
+<body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="/" style="font-family:Antipasto" class="brand-logo">LOJA INCANTO</a>
+      <ul class="right hide-on-med-and-down" style="font-family:AGENCYR">
+        <li><a href="index.html">HOME</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav" style="font-family:AGENCYR">
+        <li><a href="index.html">HOME</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <!--   Section 1  -->
+  <div id="section1">
+    <div id="index-banner" class="parallax-container">
+      <div class="section no-pad-bot">
+        <div class="container">
+          <br><br>
+          <h1 class="header center"><img src="/images/icones/incanto.svg"></h1>
+          <div class="row center">
+            <h5 class="header col s12 light">Galeria InCantada</h5>
+          </div>
+          <br><br>
+
+        </div>
+      </div>
+      <div class="parallax"><img src="/images/background/topo.jpg" alt="Topo"></div>
+    </div>
+  </div>
+
+  <div id="links">
+    <a href="images/galeria/2 ANOS (1).jpeg" title="2 anos">
+      <img src="images/thumbnails/banana.jpg" alt="2 anos" />
+    </a>
+    <a href="images/galeria/2 ANOS (2).jpeg" title="2 anos">
+      <img src="images/thumbnails/apple.jpg" alt="2 anos" />
+    </a>
+    <a href="images/galeria/2 ANOS (3).jpeg" title="2 anos">
+      <img src="images/thumbnails/orange.jpg" alt="2 anos" />
+    </a>
+  </div>
+
+<!-- The Gallery as lightbox dialog, should be a document body child element -->
+<div id="blueimp-gallery" class="blueimp-gallery">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+  </div>
+
+  <!-- Rodapé -->
+  <!--   Section 3  -->
+  <div id="section3"></div>
+  <footer class="page-footer black">
+    <div class="container">
+      <div class="row">
+        <div class="center">
+          <h5 class="white-text"></h5>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer-copyright white">
+      <div class="container">
+        <a class="right black-text">LOJA INCANTO 2019</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button onclick="topFunction()" id="myBtn" title="Voltar ao topo"><img src="/images/icones/top.svg"></button>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/back-to-top.js"></script>
+  <script src="js/blueimp-gallery.min.js"></script>
+  <script>
+    document.getElementById('links').onclick = function(event) {
+      event = event || window.event
+      var target = event.target || event.srcElement,
+        link = target.src ? target.parentNode : target,
+        options = { index: link, event: event },
+        links = this.getElementsByTagName('a')
+      blueimp.Gallery(links, options)
+    }
+  </script>
+
+</body>
+
+</html>
