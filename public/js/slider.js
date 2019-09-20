@@ -1,10 +1,11 @@
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.slider');
-    var instances = M.Slider.init(elems, options);
-  });
+$('.carousel').carousel();
+setInterval(function() {
+  $('.carousel').carousel('next');
+}, 5000); // every 2 seconds
 
   // Or with jQuery
 
-  $(document).ready(function(){
-    $('.slider').slider();
+  $('.carousel.carousel-slider').carousel({
+    fullWidth: true,
+    indicators: true
   });
