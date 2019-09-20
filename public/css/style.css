@@ -8,22 +8,14 @@
 
 /*Fontes*/
 @font-face {
-  font-family: 'Chilanka', cursive;
-  font-family: 'Josefin Sans', sans-serif;
-  font-family: 'Abel', sans-serif;
-  font-family: 'Exo 2', sans-serif;
-  font-family: 'Lexend Exa', sans-serif;
-  font-family: 'Righteous', cursive;
-  font-family: 'Courgette', cursive;
-  font-family: 'Kalam', cursive;
-  font-family: 'Delius', cursive;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-family: 'Merienda One', cursive;
-  font-family: 'Pattaya', sans-serif;
-  font-family: 'Capriola', sans-serif;
-  font-family: 'Baloo Bhaina', cursive;
-  font-family: 'Sriracha', cursive;
+  font-family: 'Merienda', cursive;
+  font-family: 'Josefin Sans', sans-serif;
   font-family: 'Nunito', sans-serif;
-  font-family: 'Fjalla One', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Baloo Bhaina', cursive;
 }
 
  body {
