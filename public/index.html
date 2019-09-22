@@ -12,29 +12,45 @@
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Josefin+Sans|Merienda|Merienda+One|Nunito|Nunito+Sans|Open+Sans|Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <nav class="white" role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="/" style="font-family:Josefin Sans" class="brand-logo">LOJA INCANTO</a>
-      <ul class="right hide-on-med-and-down" style="font-family:Lexend Exa">
-        <li><a href="#section1">HOME</a></li>
-        <li><a href="#section2">SOBRE</a></li>
-        <li><a href="galeria.html">GALERIA</a></li>
-        <li><a href="#section3">CONTATO</a></li>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">LOJA INCANTO</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#section1">HOME <span class="sr-only">(página atual)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section2">SOBRE</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Ação</a>
+            <a class="dropdown-item" href="#">Outra ação</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Algo mais aqui</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Desativado</a>
+        </li>
       </ul>
-
-      <ul id="nav-mobile" class="sidenav" style="font-family:Lexend Exa">
-        <li><a href="#section1">HOME</a></li>
-        <li><a href="#section2">SOBRE</a></li>
-        <li><a href="galeria.html">GALERIA</a></li>
-        <li><a href="#section3">CONTATO</a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+      </form>
     </div>
   </nav>
 
@@ -184,7 +200,7 @@
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="js/materialize.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <script src="js/init.js"></script>
   <script src="js/back-to-top.js"></script>
   <script src="js/slider.js"></script>
