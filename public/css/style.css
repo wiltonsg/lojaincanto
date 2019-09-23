@@ -9,13 +9,13 @@
 /*Fontes*/
 @font-face {
   font-family: 'Roboto', sans-serif;
-  font-family: 'Open Sans', sans-serif;
-  font-family: 'Merienda One', cursive;
-  font-family: 'Merienda', cursive;
   font-family: 'Josefin Sans', sans-serif;
-  font-family: 'Nunito', sans-serif;
-  font-family: 'Nunito Sans', sans-serif;
-  font-family: 'Baloo Bhaina', cursive;
+}
+
+nav .brand-logo {
+  position: relative;
+  font-size: 30px;
+  
 }
 
  body {
