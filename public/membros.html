@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>INCANTO - Loja Colaborativa</title>
+  <meta name="description"
+    content="A InCanto chega a Salvador com a intenção de fomentar a economia criativa e dar espaço aos artesãos e microempresários." />
+  <meta name="keywords" content="incanto, economia criativa, salvador, loja colaborativa" />
+  <link rel="shortcut icon" href="/images/favicon.ico" />
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/blueimp-gallery.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="/" style="font-family:Josefin Sans" class="brand-logo">LOJA INCANTO</a>
+      <ul class="right hide-on-med-and-down" style="font-family:Josefin Sans">
+        <li><a href="index.html">HOME</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav" style="font-family:Josefin Sans">
+        <li><a href="index.html">HOME</a></li>
+      </ul>
+      <a href="/" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <!--   Section 1  -->
+  <div id="section1">
+    <div id="index-banner" class="parallax-container">
+      <div class="section no-pad-bot">
+        <div class="container">
+          <br><br>
+          <h1 class="header center"><img src="/images/icones/incanto.svg"></h1>
+          <div class="row center">
+            <h5 class="header col s12 light" style="font-family:Josefin Sans">Membros Incantado</h5>
+          </div>
+          <br><br>
+
+        </div>
+      </div>
+      <div class="parallax"><img src="/images/background/topo.jpg" alt="Topo"></div>
+    </div>
+  </div>
+
+  <div id="galeria">
+    <div class="container">
+      <div id="links">
+        <a href=https://instagram.fssa8-1.fna.fbcdn.net/vp/082a9d3505f7a55d375fe7d846f7ac52/5E298479/t51.2885-19/s150x150/14099727_1806168829629934_46338972_a.jpg?_nc_ht=instagram.fssa8-1.fna.fbcdn.net">
+          <img src="https://instagram.fssa8-1.fna.fbcdn.net/vp/082a9d3505f7a55d375fe7d846f7ac52/5E298479/t51.2885-19/s150x150/14099727_1806168829629934_46338972_a.jpg?_nc_ht=instagram.fssa8-1.fna.fbcdn.net" />
+        </a>
+        <a href="images/galeria/2-ANOS-(2).jpg">
+          <img src="images/galeria/thumgnails/2-ANOS-(2).jpg" />
+        </a>
+        <a href="images/galeria/2-ANOS-(3).jpg">
+          <img src="images/galeria/thumbnails/2-ANOS-(3).jpg" />
+        </a>
+        <a href="images/galeria/2-ANOS-(4).jpg">
+          <img src="images/galeria/thumbnails/2-ANOS-(4).jpg" />
+        </a>
+        <a href="images/galeria/2-ANOS-(5).jpg">
+          <img src="images/galeria/thumbnails/2-ANOS-(5).jpg" />
+        </a>
+        <a href="images/galeria/2-ANOS-(6).jpg">
+          <img src="images/galeria/thumbnails/2-ANOS-(6).jpg" />
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script>
+    document.getElementById('links').onclick = function (event) {
+      event = event || window.event
+      var target = event.target || event.srcElement,
+        link = target.src ? target.parentNode : target,
+        options = { index: link, event: event },
+        links = this.getElementsByTagName('a')
+      blueimp.Gallery(links, options)
+    }
+  </script>
+
+  <!-- The Gallery as lightbox dialog, should be a document body child element -->
+  <div id="blueimp-gallery" class="blueimp-gallery">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+  </div>
+
+  <!-- Rodapé -->
+  <!--   Section 3  -->
+  <div id="section3"></div>
+  <footer class="page-footer black">
+    <div class="container">
+      <div class="row">
+        <div class="center">
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright white">
+      <div class="container">
+          <a class="left black-text" href="https://github.com/wiltonsg/" target="_blank">Developer Wilton Gonçalves</a>
+        <a class="right black-text">LOJA INCANTO 2019</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button onclick="topFunction()" id="myBtn" title="Voltar ao topo"><img src="/images/icones/top.svg"></button>
+
+  <!--  Scripts -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/back-to-top.js"></script>
+  <script src="js/blueimp-gallery.min.js"></script>
+
+</body>
+
+</html>
