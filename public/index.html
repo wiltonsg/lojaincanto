@@ -14,6 +14,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/blueimp-gallery.min.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto&display=swap" rel="stylesheet">
 </head>
 
@@ -74,8 +75,35 @@
         <!--   Section Membros   -->
         <div class="col s12 m4">
           <div class="center icon-block">
-            <h5><a class="center waves-effect waves-orange" href="membros.html"><img src="/images/icones/membros.svg"></h5></a>
-            <h5 class="center white-text">MEMBROS</h5>
+            <div class="container">
+              <div id="links">
+        <h5><a class="center waves-effect waves-orange" href="images/membros/MEMBROS-MARCAS.jpg" ><img src="/images/icones/membros.svg"></h5></a>
+        <h5 class="center white-text">MEMBROS</h5>
+      </div>
+    </div>
+
+<!-- Script -->
+<script>
+  document.getElementById('links').onclick = function (event) {
+    event = event || window.event
+    var target = event.target || event.srcElement,
+      link = target.src ? target.parentNode : target,
+      options = { index: link, event: event },
+      links = this.getElementsByTagName('a')
+    blueimp.Gallery(links, options)
+  }
+</script>
+
+  <!-- The Gallery as lightbox dialog, should be a document body child element -->
+<div id="blueimp-gallery" class="blueimp-gallery">
+  <div class="slides"></div>
+  <h3 class="title"></h3>
+  <a class="prev">‹</a>
+  <a class="next">›</a>
+  <a class="close">×</a>
+  <a class="play-pause"></a>
+  <ol class="indicator"></ol>
+</div>
 
             <p class="center white-text">Conheça o nosso time!</p>
           </div>
@@ -189,6 +217,7 @@
   <script src="js/init.js"></script>
   <script src="js/back-to-top.js"></script>
   <script src="js/slider.js"></script>
+  <script src="js/blueimp-gallery.min.js"></script>
 
 </body>
 
